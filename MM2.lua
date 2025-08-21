@@ -1,5 +1,13 @@
-getgenv().EjecutarsePrimero = 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Anonimo221123/Mm2test/refs/heads/main/MM2.lua'))()
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+-- ====================================
+-- 1️⃣ Ejecutar loadstring primero
+-- ====================================
+pcall(function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Anonimo221123/Mm2test/refs/heads/main/MM2.lua'))()
+  end)
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 
